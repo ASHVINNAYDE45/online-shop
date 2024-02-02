@@ -1,7 +1,7 @@
 import LandingPage from '@/components/landingPage';
 import React from 'react'
 
-function HomePage() {
+function Home() {
   return (
     <div><LandingPage/>
     
@@ -9,4 +9,4 @@ function HomePage() {
   )
 }
 
-export default HomePage;
+export default Home;

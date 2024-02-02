@@ -1,11 +1,17 @@
 import React from 'react'
 import Header from '../layout/header';
 import LayoutPage from '../layout';
+import Slider from './slider';
+import ShopUs from './shopUs';
+import NewCustmore from './newCustmore';
 
 function LandingPage() {
     return (
         <div>
-<LayoutPage/>
+{/* <LayoutPage/> */}
+<Slider/>
+<ShopUs/>
+<NewCustmore/>
         </div>
     )
 }
