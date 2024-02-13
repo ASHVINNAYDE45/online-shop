@@ -22,7 +22,7 @@ function HeaderPage() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link" href="./home">Home </Link>
+                <a className="nav-link" href="home">Home </a>
               </li>
               <li className="nav-item dropdown active">
                 <a className="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
@@ -49,10 +49,10 @@ function HeaderPage() {
                 </button>
               </form>
               <li className="nav-item">
-                <a className="nav-link" href="contact.html">SignUp</a>
+                <a className="nav-link" href="signUp">SignUp</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="contact.html">Login</a>
+                <a className="nav-link" href="login">Login</a>
               </li>
               <Svg1 />
 

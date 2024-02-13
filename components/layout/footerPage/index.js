@@ -1,30 +1,28 @@
-
-
 import React from 'react'
 
 function FooterPage() {
     return (
         <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="full">
-                            <div class="logo_footer">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-4">
+                        <div className="full">
+                            <div className="logo_footer">
                                 <img width="210" src="/assects/images/logo.png" alt="#" />
                             </div>
-                            <div class="information_f">
+                            <div className="information_f">
                                 <p><strong>ADDRESS:</strong> 28 White tower, Street Name New York City, USA</p>
                                 <p><strong>TELEPHONE:</strong> +91 987 654 3210</p>
                                 <p><strong>EMAIL:</strong> yourmain@gmail.com</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-8">
-                        <div class="row">
-                            <div class="col-md-7">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="widget_menu">
+                    <div className="col-md-8">
+                        <div className="row">
+                            <div className="col-md-7">
+                                <div className="row">
+                                    <div className="col-md-6">
+                                        <div className="widget_menu">
                                             <h3>Menu</h3>
                                             <ul>
                                                 <li>Home</li>
@@ -36,8 +34,8 @@ function FooterPage() {
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="widget_menu">
+                                    <div className="col-md-6">
+                                        <div className="widget_menu">
                                             <h3>Account</h3>
                                             <ul>
                                                 <li>Account</li>
@@ -51,16 +49,16 @@ function FooterPage() {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-5">
-                                <div class="widget_menu">
+                            <div className="col-md-5">
+                                <div className="widget_menu">
                                     <h3>Newsletter</h3>
-                                    <div class="information_f">
+                                    <div className="information_f">
                                         <p>Subscribe by our newsletter and get update protidin.</p>
                                     </div>
-                                    <div class="form_sub">
+                                    <div className="form_sub">
                                         <form>
                                             <fieldset>
-                                                <div class="field">
+                                                <div className="field">
                                                     <input type="email" placeholder="Enter Your Mail" name="email" />
                                                     <input type="submit" value="Subscribe" />
                                                 </div>

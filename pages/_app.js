@@ -13,12 +13,12 @@ import LayoutPage from '@/components/layout';
 export default function App({ Component, pageProps }) {
   const getLayout = Component.getLayout || ((page) => page);
   // return <Component {...pageProps} />;
-  return (
-  <LayoutPage>
-   <Component {...pageProps} />
- </LayoutPage>
-  ) 
-}
+//   return (
+//   <LayoutPage>
+//    <Component {...pageProps} />
+//  </LayoutPage>
+//   ) 
+// }
 // export default function App({ Component, pageProps }) {
 //    const getLayout = Component.getLayout || ((page) => page);
 //   // return(
@@ -26,4 +26,5 @@ export default function App({ Component, pageProps }) {
 //   //  <Component {...pageProps} />
 //   // </LayoutPage> 
 //   // )
-//   return getLayout(<Component {...pageProps} />);
+  return getLayout(<Component {...pageProps} />);
+}

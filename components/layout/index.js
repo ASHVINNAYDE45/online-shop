@@ -1,6 +1,6 @@
 import HeaderPage from './header';
 import React from 'react'
-import FooterPage from './footer';
+import FooterPage from './footerPage';
 
 function LayoutPage({children}) {
   return (
