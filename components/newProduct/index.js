@@ -70,7 +70,7 @@ function NewProduct() {
                                     <div class="card-body">
                                         <h5 class="card-title mb-0">{product.title.substring(0, 12)}</h5>
                                         <p class="card-text lead fw-bold">${product.price}</p>
-                                        <a href="#" class="btn btn-outline-dark">buy Now</a>
+                                        <a href="productView" class="btn btn-outline-dark">buy Now</a>
                                     </div>
                                 </div>
                             </div>

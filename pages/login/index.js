@@ -1,9 +1,11 @@
 import LoginPage from '@/components/loginPage'
+import LoginPages from '@/components/loginPages'
 import React from 'react'
 
 function Login() {
   return (
-    <LoginPage/>
+    // <LoginPage/>
+    <LoginPages/>
   )
 }
 

@@ -37,7 +37,7 @@ function HeaderPage() {
                 <a className="nav-link" href="product">Products</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="blog_list.html">Blog</a>
+                <a className="nav-link" href="">Blog</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="contact.html">Contact</a>
