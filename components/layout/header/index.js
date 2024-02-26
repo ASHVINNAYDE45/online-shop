@@ -36,12 +36,12 @@ function HeaderPage() {
               <li className="nav-item">
                 <a className="nav-link" href="product">Products</a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link" href="">Blog</a>
-              </li>
-              <li className="nav-item">
+              </li> */}
+              {/* <li className="nav-item">
                 <a className="nav-link" href="contact.html">Contact</a>
-              </li>
+              </li> */}
               <form className="form-inline">
                 <button className="btn my-2 my-sm-0 nav_search-btn" type="submit">
 
@@ -53,6 +53,9 @@ function HeaderPage() {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="login">Login</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="./">Add Card</a>
               </li>
               <Svg1 />
 

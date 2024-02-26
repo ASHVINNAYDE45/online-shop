@@ -1,7 +1,60 @@
-import React from 'react'
+import React  from 'react'
+import { useState } from 'react';
 import { FaFacebook, FaGithub, FaGoogle, FaTwitter } from "react-icons/fa";
+import axios from 'axios';
+import { useRouter } from 'next/router';
 
 function SignUpPage() {
+    const router = useRouter();
+
+    const [formData, setFormData] = useState({
+        fullName: '',
+        email: '',
+        password: '',
+        confirmPassword: '',
+        agreeToTerms: false,
+    });
+
+    const handleInputChange = (e) => {
+        const { name, value, type, checked } = e.target;
+        setFormData({
+            ...formData,
+            [name]: type === 'checkbox' ? checked : value,
+        });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            // Check if the user has agreed to the terms
+            if (!formData.agreeToTerms) {
+                alert('Please agree to the terms before signing up');
+                return;
+            }
+
+            // Make sure passwords match
+            if (formData.password !== formData.confirmPassword) {
+                alert('Passwords do not match');
+                return;
+            }
+
+            // Use axios to handle the registration (replace with your API endpoint)
+            const response = await axios.post('https://reqres.in/api/register', {
+                email: formData.email,
+                password: formData.password,
+            });
+
+            router.replace('/login');
+            console.log('Registration successful:', response.data);
+        } catch (error) {
+            console.error('Error during registration:', error.message);
+            // Handle the error (display an error message, etc.)
+        }
+    };
+
+
+
     return (
         <section className="">
             <div className="px-4 py-5 px-md-5 text-center text-lg-start" style={{ backgroundColor: 'hsl(0, 0%, 96%)' }}>

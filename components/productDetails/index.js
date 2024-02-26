@@ -2,13 +2,20 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/router';
 import { FaStar } from 'react-icons/fa6';
+// import { useDispatch } from 'react-redux';
+// import { addCart } from '@/redux/action';
 
 function ProductDetails() {
     const router = useRouter();
     const { id } = router.query;
     const [product, setProduct] = useState(null);
     const [loading, setLoading] = useState(true);
+  
 
+    // const dispatch= useDispatch();
+    // const addProduct=(product)=>{
+    //     dispatch(addCart(product));
+    // }
     useEffect(() => {
         const fetchProduct = async () => {
             if (id) {
@@ -45,7 +52,7 @@ function ProductDetails() {
                 <p className="lead fw-bolder">Rating {product.rating && product.rating.rate}<FaStar className='fa fa-star'/></p>
                 <h3 className="display-6 fw-bold my-4">${product.price}</h3>
                 <p className="lead">{product.description}</p>
-                <button className="btn btn-outline-dark">Add To Cart</button>
+                <button className="btn btn-outline-dark" onClick={()=>addProduct(product)}>Add To Cart</button>
                 <button className="btn btn-outline-dark">Go To Cart</button>
             </div>
         </div>
