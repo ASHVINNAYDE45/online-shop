@@ -11,9 +11,9 @@ function HeaderPage() {
         <nav className="navbar navbar-expand-lg custom_nav-container">
           <a className="navbar-brand" href="index.html">
             <Image
-              src="/assects/images/logo.png"
-              width={60}
-              height={20}
+              src="/assects/images/front.jpg"
+              width={180}
+              height={80}
               alt="Picture of the author" />
           </a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

@@ -8,7 +8,7 @@ function FooterPage() {
                     <div className="col-md-4">
                         <div className="full">
                             <div className="logo_footer">
-                                <img width="210" src="/assects/images/logo.png" alt="#" />
+                                <img width="210" src="/assects/images/front.jpg" alt="#" />
                             </div>
                             <div className="information_f">
                                 <p><strong>ADDRESS:</strong> 28 White tower, Street Name New York City, USA</p>

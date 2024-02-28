@@ -6,16 +6,16 @@ import LandingPage from "@/components/landingPage";
 import LayoutPage from "@/components/layout";
 
 // import { Provider } from "react-redux";
-// import store from "@/redux/reducer/store";
+//  import store from "@/redux/reducer/store";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
-    {/* <Provider store={store}> */}
+     {/* <Provider store={store}>  */}
      <LandingPage/>
-     {/* </Provider> */}
+      {/* </Provider>  */}
     </>
   );
 }

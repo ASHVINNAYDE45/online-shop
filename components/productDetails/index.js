@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useRouter } from 'next/router';
 import { FaStar } from 'react-icons/fa6';
 // import { useDispatch } from 'react-redux';
-// import { addCart } from '@/redux/action';
+//  import { addCart } from '@/redux/action';
 
 function ProductDetails() {
     const router = useRouter();
@@ -12,10 +12,10 @@ function ProductDetails() {
     const [loading, setLoading] = useState(true);
   
 
-    // const dispatch= useDispatch();
-    // const addProduct=(product)=>{
-    //     dispatch(addCart(product));
-    // }
+//  const dispatch= useDispatch();
+//      const addProduct=(product)=>{
+//          dispatch(addCart(product));
+//      }
     useEffect(() => {
         const fetchProduct = async () => {
             if (id) {
